@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent0.5">#80000000</color>
+
+    <!-- characters color -->
+    <color name="cor1">#ffffff</color>
+    <color name="cor2">#909090</color>
+    <color name="cor3">#333333</color>
+    <color name="cor4">#4285f4</color>
+    <color name="cor5">#aaaaaa</color>
+    <color name="cor6">#bbbbbb</color>
+    <color name="cor7">#fbfbfb</color>
+    <color name="cor8">#666666</color>
+    <color name="cor9">#66CC33</color>
+    <color name="cor10">#D9D9D9</color>
+    <color name="cor11">#bebebe</color>
+    <color name="cor12">#dedede</color>
+    <color name="cor13">#FD46A2</color>
+    <color name="cor14">#035F8C</color>
+    <color name="cor15">#666666</color>
+    <color name="cor16">#f9f9f9</color> <!-- 浅灰色背景色 -->
+    <color name="cor17">#8fc320</color>
+    <color name="cor18">#73cF40</color>
+    <color name="cor19">#f2f2f2</color>
+    <color name="cor20">#606366</color> 
+    <color name="cor21">#e1e3e6</color> 
+    <color name="taskline_cor">#dcdcdc</color>
+
+
+    <!-- background color -->
+    <color name="bgcor1">#ffffff</color>
+    <color name="bgcor2">#f8f8f8</color>
+    <color name="bgcor3">#EEEEEE</color>
+    <color name="bgcor4">#F3F3F3</color>
+    <color name="bgcor5">#70000000</color>
+    <color name="bgcor6">#77333333</color>
+    <color name="bgcor7">#F9F9F9</color>
+    <color name="bgcor8">#9a9a9a9a</color>
+    
+    <!-- line color -->
+    <color name="linecor1">#dcdcdc</color>
+
+    <!-- the colors of button #90DA2F -->
+    <color name="btn_green_nm">#8fc320</color>
+    <color name="btn_green_pre">#7FC668</color>
+    <color name="btn_blue_nm">#0089DD</color>
+    <color name="btn_blue_pre">#0879B2</color>
+    <color name="btn_red_nm">#FF5454</color>
+    <color name="btn_red_pre">#F35050</color>
+
+</resources>
