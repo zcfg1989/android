@@ -15,7 +15,7 @@
         android:theme="@style/MyAppTheme"  >
         <activity
             android:name="com.example.news.MainActivity"
-            android:theme="@style/AppBaseTheme">
+            android:theme="@style/MyAppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
