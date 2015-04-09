@@ -1,9 +1,11 @@
 package com.example.news;
 
+
 import com.example.news.MainTab01;
 import com.example.news.MainTab02;
 import com.example.news.MainTab03;
 import com.example.news.MainTab04;
+
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -27,6 +29,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	private LinearLayout mTabBtnAddress;
 	private LinearLayout mTabBtnSettings;
 	private FragmentManager fragmentManager;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		setTabSelection(0);
 
 	}
+	
+
 
 	private void initViews() {
 

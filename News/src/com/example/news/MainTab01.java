@@ -1,5 +1,7 @@
 package com.example.news;
 
+import java.sql.SQLException;
+
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.Fragment;
@@ -10,7 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.news.db.DBHelper;
+import com.example.news.db.NewsEntity;
 import com.example.news.view.DialogFactory;
+import com.j256.ormlite.dao.Dao;
 
 public class MainTab01 extends Fragment
 {
@@ -31,6 +36,8 @@ public class MainTab01 extends Fragment
 		return myView;
 		
 	}
+	
+
 	
 
 
