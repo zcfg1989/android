@@ -5,15 +5,15 @@
     android:layout_height="match_parent"
     android:background="@color/bgcor1"
     android:orientation="vertical" >
- 
-   	<TextView 
-   	    android:id ="@+id/zhihu_tx"
-   	    android:layout_width="match_parent"
-   	    android:layout_height="0dp"
-   	    android:layout_weight="1"
-   	    android:textColor="@color/cor2"
-   	    android:gravity="center"
-   	    android:textSize="@dimen/siz4"
-   	    />
+
+   	<ListView
+        android:id="@+id/zhihu_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/cor2"
+        android:dividerHeight="1px"
+        android:scrollbarSize="4dp"
+        android:scrollbars="none"/>
 
 </LinearLayout>

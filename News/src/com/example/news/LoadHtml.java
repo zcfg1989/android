@@ -37,8 +37,7 @@ class Loadhtml extends AsyncTask<String, String, String>
 	private Context mContext;
 	private TextView tv;
 	private Dialog loginingDialog;
-	private DBHelper mDbHelper;
-	private Dao<NewsEntity,Integer> mNewsDao;
+
 	
 	public Loadhtml(Context mContext,TextView tv,Dialog loginingDialog) {
 		
@@ -50,16 +49,6 @@ class Loadhtml extends AsyncTask<String, String, String>
     @Override
     protected String doInBackground(String... params) {
     	
-		mDbHelper = DBHelper.getInstance(mContext);
-		try {
-			mNewsDao = mDbHelper.getNewsDao();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-        String myString = null;
-        StringBuffer sff = new StringBuffer();
         String html = getHtmlByUrl("http://daily.zhihu.com/");
 		try {
 //			Document doc = Jsoup.connect("http://daily.zhihu.com/").get();
@@ -75,14 +64,12 @@ class Loadhtml extends AsyncTask<String, String, String>
 					String fileName = NewsApp.MTC_DATA_ZHIHU_PATH+"/"+i+".jpg";
 					String text = link.text();
 					getImages(src, fileName);
-					NewsEntity news = new NewsEntity(text, fileName);
-					mNewsDao.createIfNotExists(news);
-					sff.append(url).append("\n").append(src).append("\n")
-							.append(link.text()).append("\n");
+					NewsEntity news = new NewsEntity(text, fileName, url);					
+
 				}
 			}
-			myString = sff.toString();
-			return myString;
+
+			return "success";
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
